@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kevinzhw153.github.io</id>
     <title>kevin</title>
-    <updated>2020-08-31T01:43:11.988Z</updated>
+    <updated>2020-08-31T02:52:00.335Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kevinzhw153.github.io"/>
     <link rel="self" href="https://kevinzhw153.github.io/atom.xml"/>
@@ -10,6 +10,25 @@
     <logo>https://kevinzhw153.github.io/images/avatar.png</logo>
     <icon>https://kevinzhw153.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, kevin</rights>
+    <entry>
+        <title type="html"><![CDATA[CVA-58]]></title>
+        <id>https://kevinzhw153.github.io/post/cva-58/</id>
+        <link href="https://kevinzhw153.github.io/post/cva-58/">
+        </link>
+        <updated>2020-08-31T01:47:47.000Z</updated>
+        <content type="html"><![CDATA[<p>这是不是一艘航母呢?</p>
+<figure data-type="image" tabindex="1"><img src="https://kevinzhw153.github.io/post-images/1598842233251.jpg" alt="" loading="lazy"></figure>
+<p>这艘航母是不是很奇怪，实际上它就是一艘航母但可惜并没有建造出来只是摆上龙骨就因预算问题停止建造</p>
+<p><strong>CVA-58</strong></p>
+<p>美国号航空母舰(CVA-58)1949年4月18日动工1949年4月23日取消建造</p>
+<p>航空母舰是以核子攻击用的载台为出发点开始发展，但之后却也做了局部的妥协，容纳较多的战斗机。全通式甲板设计的美国号被设计可以让超过10万磅（约合45吨）重的飞机，携带早期型的核武器（本身重约5吨）进行起降。<br>
+设计中美国号并没有舰岛，甲板边缘装设有四架升降机，并拥有四具弹射器，四具中的两具设置于舰首，另外两具则是在舰首两侧位置稍微向后退缩一点处。<br>
+根据当初的预估光美国号本身的建造费用就已高达1亿9千万美元，再加上要组成整个航母战斗群所需的额外39艘各式军舰，使得舰队总预算高达了12亿6千5百万美元,这无疑是个庞大的数字美国也无力承担，所以最后这艘航母也停止了建造</p>
+<p><img src="https://kevinzhw153.github.io/post-images/1598842245150.jpg" alt="" loading="lazy"><br>
+<img src="https://kevinzhw153.github.io/post-images/1598842250730.jpg" alt="" loading="lazy"><br>
+<img src="https://kevinzhw153.github.io/post-images/1598842256117.jpg" alt="" loading="lazy"></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[F35]]></title>
         <id>https://kevinzhw153.github.io/post/f35/</id>
