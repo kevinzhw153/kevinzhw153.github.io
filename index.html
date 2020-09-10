@@ -217,6 +217,38 @@
   </a>
 </div>
 
+      <script>
+        const upstream = 'zh.wikipedia.org'
+const upstream_mobile = 'zh.m.wikipedia.org'
+const blocked_region = ['KP','SY','CU','PK']
+const blocked_ip_address = ['127.0.0.1','0.0.0.0']
+
+addEventListener('fetch', event => {
+  event.respondWith(handleRequest(event.request))
+})
+
+async function  handleRequest(request){
+  try{
+    var u = (new URL(request.url))
+  if(u.protocol !=='https:') {
+    u.protocol='https:'
+    return(new Response('',{status:301,headers:{'location':u.href}}))
+  }
+
+    u.searchParams.append('variant','zh-cn')
+
+if(u.pathname==='/'){return(new Response('',{status:302,headers:{'location':'/wiki/Wikipedia:首页'}})) }
+var ua =(new Headers(request.headers)).get('User-Agent')
+var ual =(ua ||'').toLowerCase()
+var d = await fetch (`https://zh${(ual.indexOf('mobile') !== -1|| ual.indexOf('android') !== -1||
+ual.indexOf('like mac os x ')!== -1) ?'.m':''}.wik${'i'}pedia.org${u.pathname}${u.search}`)
+ return (new Response(d.body,{status:d.status,headers:d.headers}))
+  }catch(e){
+  return (new Response(String(e),{status:500}))
+  }
+}
+        </script>  
+        
       </div>
     </div>
   </body>
