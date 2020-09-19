@@ -90,3 +90,132 @@
               
             </div>
             
+ <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>科罗拉多大峡谷</p>
+                <h3>
+                  序言：以后会陆续为大家推送旅游内容目的是更好的让大家了解外国
+                  </h3>
+                <p>
+                  大峡谷位于美国亚利桑那州西北部，是科罗拉多河经过数百万年以上的冲蚀而形成，色彩斑斓，峭壁险峻。1979年大峡谷被列入世界遗产。在许多非权威版本的世界七大自然奇观列表上都有大峡谷的名字。目前由美国大峡谷国家公园管理。
+
+大峡谷总长446公里，平均深度有1200米，宽度从0.5公里至29公里不等。科罗拉多高原抬升时，科罗拉多河及其支流切割层层沉积岩，由此形成了大峡谷。将近20亿年来的地质变迁史一览无余。
+
+1540年，一个名叫加西亚·洛佩兹·德·卡迪纳斯（García López de Cárdenas）的西班牙人最先发现了大峡谷。19世纪70年代，美国陆军少校约翰·威斯利·鲍威尔率领第一支科学考察队前往大峡谷。鲍威尔将谷中的沉积岩层形容为“一本巨型小说中的书页”。然而，此前已有美洲印第安人在峡谷壁上定居了。
+                  </p>
+                <p><img src="https://kevinzhw153.github.io/post-images/DSC_5891.jpg" alt="" loading="lazy"><br></p>
+                <p>
+                  大峡谷之所以如此之深、其岩层（大部分在海平面以下形成）如此高耸，可能要归功于大约6500万年以前科罗拉多高原将近1500至3000米的抬高。这一抬高使科罗拉多河及其支流的倾斜度大大增加，从而加快了其流速、增强了其下切岩石的能力。
+
+科罗拉多河盆地（大峡谷是它的一部分）已有4000万年历史，但大峡谷本身的历史或许还不到600万年（大部分侵蚀是在最近200万年内才发生的）。所有这些侵蚀的结果就是——造就了地球上最完全的地质宝库之一。
+
+在冰河时期，相对较潮湿的气候使古科罗拉多河水系的总水量有所增加，从而加快了其下切河道的速度。
+
+530万年前，加利福尼亚湾（Gulf of California）被打开，使得古科罗拉多河河床位置降低。这一变化直接导致下切侵蚀比例的增加。从那时起至120万年前，古科罗拉多河下切到了与现在相差无几的深度。如今呈阶梯状的岩壁是由差别侵蚀造成的。
+                 
+                100万年前，该地区的火山活动（大多数在峡谷的西部区域附近）产生了大量火山灰与熔岩（甚至曾将河道完全阻塞），随后沉积形成火山岩——这是峡谷中的最为年轻的岩石。</p>
+                
+                
+<p><img src="https://kevinzhw153.github.io/post-images/DSC_5892.jpg" alt="" loading="lazy"><br></p>
+                <p><img src="https://kevinzhw153.github.io/post-images/DSC_5895.jpg" alt="" loading="lazy"><br></p>
+                <p><img src="https://kevinzhw153.github.io/post-images/DSC_5912.jpg" alt="" loading="lazy"><br></p>
+                
+                   </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://kevinzhw153.github.io/post/f35/">
+              <h3 class="post-title">
+                F35
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '10ec16bec67b39db983f',
+    clientSecret: '32fef06b36810c41d42295e65164847a79bb3061',
+    repo: 'kevinzhw153.github.io',
+    owner: 'kevinzhw153',
+    admin: ['kevinzhw153'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://kevinzhw153.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
