@@ -426,10 +426,49 @@ daovoice('update');
 	<span id="busuanzi_container_site_uv">
   本站访客数<span id="busuanzi_value_site_uv"></span>人次 
 		</span>
-		<script src="http://pv.sohu.com/cityjson?ie=utf-8">
-document.write(returnCitySN["cip"]+','+returnCitySN["cname"]) 
+		
+		<script type="text/javascript" src="jquery-3.3.1.min.js" ></script>
+		<script>
+$(function(){
+	var num=0;
+	var timer=null;
+	var step=0;
+	$('.btn').click(function(){
+		step=Math.floor(Math.random()*$('.list').length+$('.list').length);
+		timer=setInterval(function(){
+			$('.list').eq(num).attr('class','active list').siblings().attr('class','list');
+			step--;
+			if(step==0){
+				clearInterval(timer);
+				alert('您中了'+$('.list').eq(num-1).html());
+				$('.list').eq(num-1).attr('class','active list').siblings().attr('class','list');
+				
+			};
+			
+			num++;
+			if(num==$('.list').length){
+				num=0;
+			};
+			
+		},100);
+	})
+})
 </script>
+
+	<input type="button" value="开始抽奖" class="btn" />
+	<div class="box">
+		<div class="list">一等奖</div>
+		<div class="list">二等奖</div>
+		<div class="list">三等奖</div>
+		<div class="list">四等奖</div>
+		<div class="list">五等奖</div>
+		<div class="list">六等奖</div>
+		<div class="list">七等奖</div>
+		<div class="list">八等奖</div>
+		<div class="list">九等奖</div>
+	</div>
         
+		
       </div>
     </div>
   </body>
