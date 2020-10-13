@@ -4,3 +4,5 @@
 
 ## Ver 1.0
 修复bug
+## Ver 2.0
+不告诉你(github
