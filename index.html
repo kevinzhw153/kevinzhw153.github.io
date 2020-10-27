@@ -193,34 +193,7 @@ daovoice('update');
   <body>
 	  
 							
-this.Response.Write("<script>alert('test！');window.opener.location.href=window.opener.location.href;</script>");  
-	  <script>
-$(function(){
-	var num=0;
-	var timer=null;
-	var step=0;
-	$('.btn').click(function(){
-		step=Math.floor(Math.random()*$('.list').length+$('.list').length);
-		timer=setInterval(function(){
-			$('.list').eq(num).attr('class','active list').siblings().attr('class','list');
-			step--;
-			if(step==0){
-				clearInterval(timer);
-				alert('欢迎光临');
-				$('.list').eq(num-1).attr('class','active list').siblings().attr('class','list');
-				
-			};
-			
-			num++;
-			if(num==$('.list').length){
-				num=0;
-			};
-			
-		},100);
-	})
-})
-</script>
-    
+
 	  
     <div class="main">
       <div class="main-content">
