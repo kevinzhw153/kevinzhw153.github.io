@@ -12,33 +12,6 @@
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173251435-1"></script>
 
-	  <script>
-$(function(){
-	var num=0;
-	var timer=null;
-	var step=0;
-	$('.btn').click(function(){
-		step=Math.floor(Math.random()*$('.list').length+$('.list').length);
-		timer=setInterval(function(){
-			$('.list').eq(num).attr('class','active list').siblings().attr('class','list');
-			step--;
-			if(step==0){
-				clearInterval(timer);
-				alert('欢迎光临');
-				$('.list').eq(num-1).attr('class','active list').siblings().attr('class','list');
-				
-			};
-			
-			num++;
-			if(num==$('.list').length){
-				num=0;
-			};
-			
-		},100);
-	})
-})
-</script>
-    
     <script>
   
   window.dataLayer = window.dataLayer || [];
@@ -219,6 +192,36 @@ daovoice('update');
   <meta name="description" content="呃呃呃" />
   </head>
   <body>
+	  
+	  
+	  <script>
+$(function(){
+	var num=0;
+	var timer=null;
+	var step=0;
+	$('.btn').click(function(){
+		step=Math.floor(Math.random()*$('.list').length+$('.list').length);
+		timer=setInterval(function(){
+			$('.list').eq(num).attr('class','active list').siblings().attr('class','list');
+			step--;
+			if(step==0){
+				clearInterval(timer);
+				alert('欢迎光临');
+				$('.list').eq(num-1).attr('class','active list').siblings().attr('class','list');
+				
+			};
+			
+			num++;
+			if(num==$('.list').length){
+				num=0;
+			};
+			
+		},100);
+	})
+})
+</script>
+    
+	  
     <div class="main">
       <div class="main-content">
         <div class="site-header">
