@@ -1,0 +1,37 @@
+<!DOCTYPE html>  
+
+<html> 
+
+<head> 
+
+<meta charset="utf-8"> 
+
+<title>人脸检测</title> 
+
+<meta name="keywords" content="关键字" /> 
+
+<meta name="description" content="此网页描述" /> 
+
+</head> 
+
+<body>
+
+<form action="http://api.eyekey.com/face/Check/checking" method="post">   
+
+<!-- 注意这里需要配置调用接口的地址，同时method要标示出请求的方式，根据接口定义这里是post方式     -->
+
+<input type="text" name="app_id" size="80" value="获取的appID" /><br/> 
+
+<input type="text" name="app_key" size="80" value="获取的appKEY" /><br/> 
+
+<input type="text" name="img" size="80" value="经过base64编码的图片" /> 
+
+<br/> 
+
+<input type="submit" value="提交"/> 
+
+</form> 
+
+</body>
+
+</html>
